@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Result</title>
+</head>
+<body>
+    <h1>Filtered Images</h1>
+    <h2>Original Image:</h2>
+    <img src="{{ url_for('uploaded_file', filename=original_image) }}" alt="Original Image">
+
+    <h2>Filtered Whole Image:</h2>
+    <img src="{{ url_for('uploaded_file', filename=filtered_image_whole_image) }}" alt="Filtered Whole Image">
+
+    <h2>Filtered Face:</h2>
+    <img src="{{ url_for('uploaded_file', filename=filtered_image_face) }}" alt="Filtered Face">
+</body>
+</html>
